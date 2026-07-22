@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lunch menu</title>
+    <link rel="stylesheet" href="lunch_menu.css">
+</head>
+<body>
+    <main class="container">
+      <h1>Lunch Picker</h1>
+
+      <input type="text" id="lunchInput" placeholder="enter lunch">
+
+      <div class="button-group">
+        <button class="btn primary" id="addEndBtn">Add to End</button>
+        <button class="btn primary" id="addStartBtn">Add to Start</button>
+        <button class="btn danger" id="removeEndBtn">Remove Last</button>
+        <button class="btn danger" id="removeStartBtn">Remove First</button>
+        <button class="btn accent" id="randomBtn">Pick Random Lunch</button>
+      </div>
+
+      <div id="logMessage" class="menu-list">The menu is empty.</div>
+
+      <section class="menu-display">
+        <h2>Current Menu</h2>
+        <div id="menuOutput" class="menu-list">The menu is empty.</div>
+      </section>
+    </main>
+
+    <script src="lunch_menu.js"></script>
+</body>
+</html>
